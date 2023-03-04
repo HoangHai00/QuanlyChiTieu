@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Tất cả"
+        android:id="@+id/btnTatCa"/>
+
+    <item android:title="Tháng 1"
+        android:id="@+id/btnThang1" />
+
+    <item android:title="Tháng 2"
+        android:id="@+id/btnThang2"/>
+
+    <item android:title="Tháng 3"
+        android:id="@+id/btnThang3"/>
+
+    <item android:title="Tháng 4"
+        android:id="@+id/btnThang4"/>
+
+    <item android:title="Tháng 5"
+        android:id="@+id/btnThang5"/>
+
+    <item android:title="Tháng 6"
+        android:id="@+id/btnThang6"/>
+
+    <item android:title="Tháng 7"
+        android:id="@+id/btnThang7"/>
+
+    <item android:title="Tháng 8"
+        android:id="@+id/btnThang8"/>
+
+    <item android:title="Tháng 9"
+        android:id="@+id/btnThang9"/>
+
+    <item android:title="Tháng 10"
+        android:id="@+id/btnThang10"/>
+
+    <item android:title="Tháng 11"
+        android:id="@+id/btnThang11"/>
+
+    <item android:title="Tháng 12"
+        android:id="@+id/btnThang12"/>
+
+</menu>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="70sp"
+    android:layout_width="match_parent"
+    android:layout_weight="10"
+    android:padding="10dp"
+    android:background="#FFEAA7"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:id="@+id/txtKhoanChi"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="5"
+        android:text="Khoản Chi" />
+
+    <TextView
+        android:gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/txtSoTien"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="2"
+        android:text="Số Tiền" />
+
+    <TextView
+        android:gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/txtNgayChi"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="2"
+        android:text="Ngày Chi" />
+
+    <ImageView
+        android:padding="1sp"
+        android:id="@+id/imgXoa"
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.5"
+        app:srcCompat="@drawable/xoa" />
+
+    <ImageView
+        android:padding="2sp"
+        android:id="@+id/imgSua"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.5"
+        app:srcCompat="@drawable/sua" />
+
+</LinearLayout>

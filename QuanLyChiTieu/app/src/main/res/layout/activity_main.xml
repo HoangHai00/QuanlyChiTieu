@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF9FB"
+    tools:context=".MainActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcQuanLyChiTieu"
+        android:layout_width="400dp"
+        android:layout_height="600dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lnKhungSoLieu"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/lnKhungSoLieu"
+        android:layout_width="396dp"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/tvKhungKhoanChi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Khoản Chi"
+            android:textColor="#F10C0C"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvKhungSoTien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="5dp"
+            android:text="Tiền Chi"
+            android:textColor="#F10C0C"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/KhungNgayChi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="Ngày Chi"
+            android:textColor="#F10C0C"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtTong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:text="Tổng Chi Phí :"
+        android:textColor="#F10C0C"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rcQuanLyChiTieu"
+        app:layout_constraintVertical_bias="0.586" />
+
+    <TextView
+        android:paddingTop="7sp"
+        android:id="@+id/txvHienThiSoTien"
+        android:layout_width="120sp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:text="0 Đồng"
+        android:textColor="#F10C0C"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toEndOf="@+id/txtTong"
+        app:layout_constraintTop_toBottomOf="@+id/rcQuanLyChiTieu"
+       />
+
+    <Button
+        android:id="@+id/buttonThang"
+        android:layout_width="120sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="Chọn Tháng"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txvHienThiSoTien"
+        app:layout_constraintTop_toBottomOf="@+id/rcQuanLyChiTieu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

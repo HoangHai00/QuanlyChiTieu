@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#45CD4B">
+
+    <TextView
+        android:textColor="#EF0C0C"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:id="@+id/textViewSuaTieuDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Cập Nhật Khoản Chi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:id="@+id/lnsuaNhapKhoanChi"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSuaTieuDe">
+
+        <EditText
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:id="@+id/editSuaTextKhoanChi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Nhập Khoản Chi"
+            android:textStyle="bold"
+
+            />
+        <EditText
+            android:inputType="number"
+            android:textSize="15sp"
+            android:padding="5sp"
+            android:id="@+id/editSuaTextzSoTien"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Nhập Số Tiền"
+            android:textStyle="bold"
+            />
+
+
+
+        <TextView
+            android:textSize="15sp"
+            android:padding="5sp"
+            android:layout_weight="1"
+            android:hint="nhập ngày"
+            android:id="@+id/txtSuaTextNgayChi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <Button
+
+        android:id="@+id/buttonSuaCapNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="44dp"
+        android:text="Cập Nhật"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lnsuaNhapKhoanChi" />
+
+    <Button
+        android:id="@+id/buttonSuaHuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="44dp"
+        android:text="Hủy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toEndOf="@+id/buttonSuaCapNhap"
+        app:layout_constraintTop_toBottomOf="@+id/lnsuaNhapKhoanChi" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
